@@ -29,6 +29,7 @@ class UserRealisationWidget extends WP_Widget{
                 $extensionsArray = array('png','gif','jpg','jpeg');
                 if(in_array($extensionImage, $extensionsArray)) {
 
+                  //  move_uploaded_file($_FILES['image']['tmp_name'],MY_PLUGIN_DIR.'Uploads/'.($_FILES['image']['name']));
                     move_uploaded_file($_FILES['image']['tmp_name'],MY_PLUGIN_DIR.'Uploads/'.($_FILES['image']['name']));
                     echo "Envois réussi";
                 }

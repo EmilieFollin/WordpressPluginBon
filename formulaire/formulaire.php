@@ -42,10 +42,13 @@ class UsersRealisationPlugin {
             $postdata = array(
                 'post_title' => $_POST['title'],
                 'post_content' => $_POST['description'],
+                'post_status' => 'publish',
+
+
 
 
             );
-            wp_insert_post($postdata);
+
 
             $idpost =  wp_insert_post($postdata);
 

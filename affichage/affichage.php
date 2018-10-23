@@ -43,21 +43,14 @@ class AffichagePlugin
         $titrepost = $infopost['post_title'];
         $contentpost = $infopost['post_content'];
 
-        ?>
 
-<h3><?php echo $titrepost ?></h3>
-        <p><?php echo $contentpost ?></p>
-
-
-
-
-
-
-
-
-
-<?php
     }
+
+  //  public function displaymonCV{
+
+
+
+  //  }
 
 
     public function shortcodeAction()
